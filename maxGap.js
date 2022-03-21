@@ -19,18 +19,26 @@ const maxGap = (arr) => {
     return maxDiff;
 }
 
-if (maxGap([20, 1, 17, 3, 16, 2, 7]) !== 9) {
+let result = [20, 1, 17, 3, 16, 2, 7];
+if (maxGap(result) !== 9) {
     throw new Error();
 }
+console.log(`Maximum gap in array:  ${maxGap(result)}`);
 
-if (maxGap([-20, 1, 17, -3, 16, 2, 7]) !== 17) {
+result = [-20, 1, 17, -3, 16, 2, 7];
+if (maxGap(result) !== 17) {
     throw new Error();
 }
+console.log(`Maximum gap in array:  ${maxGap(result)}`);
 
-if (maxGap([20, 1.1, 17, 3.5, -16, 2, 7]) !== 17.1) {
+result = [20, 1.1, 17, 3.5, -16, 2, 7]
+if (maxGap(result) !== 17.1) {
     throw new Error();
 }
+console.log(`Maximum gap in array:  ${maxGap(result)}`);
 
-if (maxGap([20]) !== 0) {
+result = [20];
+if (maxGap(result) !== 0) {
     throw new Error();
 }
+console.log(`Maximum gap in array:  ${maxGap(result)}`);
